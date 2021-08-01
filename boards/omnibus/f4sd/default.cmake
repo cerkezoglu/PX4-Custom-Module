@@ -47,7 +47,7 @@ px4_add_board(
 		ekf2
 		#esc_battery
 		events
-		flight_mode_manager
+		#flight_mode_manager
 		#fw_att_control
 		#fw_pos_control_l1
 		gyro_calibration
@@ -58,10 +58,10 @@ px4_add_board(
 		#local_position_estimator
 		logger
 		mavlink
-		mc_att_control
-		mc_hover_thrust_estimator
-		mc_pos_control
-		mc_rate_control
+		#mc_att_control
+		#mc_hover_thrust_estimator
+		#mc_pos_control
+		#mc_rate_control
 		#micrortps_bridge
 		navigator
 		rc_update
@@ -73,6 +73,8 @@ px4_add_board(
 		#uuv_pos_control
 		#vmount
 		#vtol_att_control
+		my_custom_module
+		my_module_il
 	SYSTEMCMDS
 		#bl_update
 		dmesg
@@ -103,4 +105,6 @@ px4_add_board(
 		usb_connected
 		ver
 		work_queue
+	EXAMPLES
+		#work_item
 	)

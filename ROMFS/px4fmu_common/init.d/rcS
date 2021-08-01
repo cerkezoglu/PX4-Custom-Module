@@ -452,6 +452,8 @@ else
 	#
 	navigator start
 
+
+
 	#
 	# Start a thermal calibration if required.
 	#
@@ -535,7 +537,7 @@ else
 			reboot
 		fi
 	fi
-
+	my_module_il start
 #
 # End of autostart.
 #
@@ -577,3 +579,4 @@ unset VEHICLE_TYPE
 # Boot is complete, inform MAVLink app(s) that the system is now fully up and running.
 #
 mavlink boot_complete
+logger on

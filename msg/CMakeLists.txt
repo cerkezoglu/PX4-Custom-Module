@@ -35,6 +35,7 @@
 cmake_policy(SET CMP0057 NEW)
 
 set(msg_files
+	custom_topic.msg ## My Custom Topic
 	actuator_armed.msg
 	actuator_controls.msg
 	actuator_outputs.msg
@@ -185,6 +186,7 @@ set(msg_files
 	wheel_encoders.msg
 	wind.msg
 	yaw_estimator_status.msg
+	orb_test.msg
 )
 
 if(NOT px4_constrained_flash_build)

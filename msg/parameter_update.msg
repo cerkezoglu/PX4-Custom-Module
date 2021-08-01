@@ -2,7 +2,7 @@
 
 uint64 timestamp		# time since system start (microseconds)
 
-uint32 instance		# Instance count - constantly incrementing
+uint32 instance			# Instance count - constantly incrementing
 
 uint32 get_count
 uint32 set_count
